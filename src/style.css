@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/* CSS FOR YOUR AVAILABILITY */
+/* Cells that can be interacted with */
+.table-drag-select td.cell-enabled {
+    /* color: green; */
+    background-color: red;
+    border: 1px dotted;
+  }
+  /* Cells that cannot be interacted with
+  .table-drag-select td.cell-disabled {
+    /* Put yer css here */
+  /* } */ 
+  /* Cells that have been selected */
+.table-drag-select td.cell-selected {
+    background-color: green;
+    border: 1px dotted;
+  }
+  /* Cells that are in the process of being selected */
+  .table-drag-select td.cell-being-selected {
+    background-color: gray;
+    border: 1px dotted;
+  }
+  /* Cells in first row */
+  .table-drag-select tr:first-child td {
+    /* Remove empty space at top of table */
+    border-top: 0;
+    line-height: 1rem;
+  }
+  /* Cells in first column */
+  .table-drag-select td:first-child {
+    /* Consume less whitespace */
+    width: 3rem;
+  }
+
+  /* CSS FOR TABLE */
+  .table {
+    border: black;
+  }
+  table, th, td{
+    border: 1px dotted;
+    font-family: 'Raleway';
+  }
+.table-drag-select {
+    /* Stretch horizontally to fill parent */
+    width: 100%;
+    /* Keep columns same width */
+    table-layout: fixed;
+    /* Disable text selection */
+    user-select: none;
+    /* Center in parent */
+    margin-left: auto;
+    margin-right: auto;
+    /* Remove space between border */
+    border-collapse: collapse;
+  }
+
+/* CSS FOR TOTAL AVAILABILITY */
+.other .table-drag-select td.cell-enabled {
+    /* color: green; */
+    background-color: white;
+    border: 1px dotted;
+  }
+    /* Cells that have been selected */
+.other .table-drag-select td.cell-selected {
+        background-color: green;
+        border: 1px dotted;
+      }
+
+      h1, h3, h4, h5 {
+    font-family: 'Raleway';
+}
+
+.header {
+    width: 100%;
+}
+
+.button {
+    font-family: 'Raleway' !important;
+  }
